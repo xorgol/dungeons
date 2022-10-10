@@ -388,7 +388,7 @@ only screen and (max-device-width : 450px){
                 <th>Sì (innocuo)</th>
             </tr>
             <tr>
-                <th>Guida<br><details><summary>Descrizione</summary>Questo incantesimo infonde nel soggetto un tocco divino che lo guida nelle sue azioni. La creatura ottiene un bonus di competenza +1 su un unico tiro per colpire, un tiro salvezza o una prova di abilità. La creatura deve scegliere come utilizzare il bonus prima di effettuare il tiro a cu intende applicarla.</details></th>
+                <th>Guida<br><details><summary>Descrizione</summary>Questo incantesimo infonde nel soggetto un tocco divino che lo guida nelle sue azioni. La creatura ottiene un bonus di competenza +1 su un unico tiro per colpire, un tiro salvezza o una prova di abilità. La creatura deve scegliere come utilizzare il bonus prima di effettuare il tiro a cui intende applicarla.</details></th>
                 <th>0</th>
                 <th>Divinazione</th>
                 <th>V, S</th>
@@ -400,16 +400,40 @@ only screen and (max-device-width : 450px){
                 <th>Sì</th>
             </tr>
             <tr>
-                <th>Individuazione del magico<br><details><summary>Descrizione</summary>L'incantatore è in grado di individuare au - re magiche . La quantità di informazion i che ottiene varia in base al tempo che im- piega per studiare un'area o un soggetto particolari :
-                    1° round : Presenza o assenza di aure ma- giche .
-                    2° round: Numero di differenti aure ma- giche e forza dell'aura più potente .
-                    aura . Se gli oggetti o le creature a cui appar- tiene l'aura sono sulla linea di visuale del-. l'incantatore, questi può effettuare prove d i Sapienza Magica per determinare la scuol a di magia di ognuno di essi . (Effettuare una prova per ogni aura ; CD 15 + il livello del- l'incantesimo, o 15 + metà del livello del -
-                    l'incantatore per effetti che non siano in- cantesimi.)
-                    Aree magiche, molteplici tipi di magia o emanazioni magiche locali particolarmen- te forti potrebbero confondere o occultare le aure più deboli .
-                    Forza dell'aura : Il potere di un'aura dipen- de dal livello dell'incantesimo in funzione o dal livello dell'incantatore di un oggetto . Se un'aura ricade in più di una categoria, in - dividuazione del magico indica la più forte; delle due.
-                    Protrarsi dell'aura: Un'aura magica si pro- trae anche dopo che la sua fonte originaria . si disperde (nel caso di un incantesimo) o
-                    viene distrutta (nel caso di un oggetto ma- . gico) . Se individuazione del magico viene lan - . ciato e diretto verso quella locazione, l'in - . cantesimo indica un'aura flebile (ancora .meno forte di un'aura debole). Quanto a .lungo l'aura permane a questo livello così . flebile dipende dalla sua forza originaria : Debole - 1d6 round<br>Moderata - 1d6 minuti<br>Forte 1d6x10 minuti<br>Schiacciante 1d6 giorni<br>Gli esterni e gli elementali non sono crea- ture magiche in sé, ma nel caso vengan o evocati l'incantesimo di evocazione utiliz- zato viene individuato.
-                    Ad ogni round l'incantatore può voltarsi per individuare la presenza di magia in un a nuova area . L'incantesimo è in grado di ol- trepassare le normali barriere, ma vien e bloccato da 30 cm di pietra, 2,5 cm di me- tallo comune, una sottile lamina di piombo o 90 cm di legno o detriti .
+                <th>Individuazione del magico<br><details><summary>Descrizione</summary>L'incantatore è in grado di individuare aure magiche . La quantità di informazioni che ottiene varia in base al tempo che impiega per studiare un'area o un soggetto particolari:
+                    <ol>
+                    <li>1° round : Presenza o assenza di aure magiche.</li>
+                    <li>2° round: Numero di differenti aure magiche e forza dell'aura più potente.</li>
+                    <li>3° round: La forza e la posizione di ogni aura.</li>
+                    </ol><br>
+                    Se gli oggetti o le creature a cui appartiene l'aura sono sulla linea di visuale dell'incantatore, questi può effettuare prove di Sapienza Magica per determinare la scuola di magia di ognuno di essi. (Effettuare una prova per ogni aura; CD 15 + il livello dell'incantesimo, o 15 + metà del livello dell'incantatore per effetti che non siano incantesimi.)<br>
+                    Aree magiche, molteplici tipi di magia o emanazioni magiche locali particolarmente forti potrebbero confondere o occultare le aure più deboli .
+                    Forza dell'aura: Il potere di un'aura dipende dal livello dell'incantesimo in funzione o dal livello dell'incantatore di un oggetto. Se un'aura ricade in più di una categoria, individuazione del magico indica la più forte delle due.
+                    Protrarsi dell'aura: Un'aura magica si protrae anche dopo che la sua fonte originaria si disperde (nel caso di un incantesimo) o viene distrutta (nel caso di un oggetto magico) . Se individuazione del magico viene lanciato e diretto verso quella locazione, l'incantesimo indica un'aura flebile (ancora meno forte di un'aura debole). Quanto a lungo l'aura permane a questo livello così . flebile dipende dalla sua forza originaria : 
+                    <table>
+                        <thead>
+                            <th>Forza Originaria</th>
+                            <th>Durata del protrarsi dell'aura</th>
+                        </thead>
+                        <tr>
+                            <th>Debole</th>
+                            <th>1d6 round</th>
+                        </tr>
+                        <tr>
+                            <th>Moderata</th>
+                            <th>1d6 minuti</th>
+                        </tr>
+                        <tr>
+                            <th>Forte</th>
+                            <th>1d6 x 10 minuti</th>
+                        </tr>
+                        <tr>
+                            <th>Schiacciante</th>
+                            <th>1d6 giorni</th>
+                        </tr>
+                    </table>
+                    <br>Gli esterni e gli elementali non sono creature magiche in sé, ma nel caso vengano evocati l'incantesimo di evocazione utilizzato viene individuato.
+                    Ad ogni round l'incantatore può voltarsi per individuare la presenza di magia in una nuova area. L'incantesimo è in grado di oltrepassare le normali barriere, ma viene bloccato da 30 cm di pietra, 2.5 cm di metallo comune, una sottile lamina di piombo o 90 cm di legno o detriti.
                     Individuazione del magico può essere reso permanente da un incantesimo permanenza .</details></th>
                 <th>0</th>
                 <th>Divinazione</th>
