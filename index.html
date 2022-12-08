@@ -189,7 +189,9 @@ only screen and (max-device-width : 450px){
 <article>
 <h1 id="title">Incantesimi da Chierico (lvl 10)</h1>
 	<br>
-    <section>     
+    
+    <section>    
+
         <div>
             <p>6 di livello 0</p>
             <input type="checkbox" id="00">
@@ -307,6 +309,13 @@ only screen and (max-device-width : 450px){
             <input type="checkbox">
             <label>5</label>
             <input type="text" placeholder="Colpo Infuocato"><br>
+        </div>
+    </section>
+    <section>
+        <div>
+            <h2>Speciale, una volta al giorno</h2>
+            <input type="checkbox" id="special">
+            <label for="special">Disintegrazione dei viventi</label>
         </div>
     </section>
 
@@ -1905,11 +1914,8 @@ colpire e per i danni.
                 <td>Fiamma Perenne<br>
                     <details>
                         <summary>Descrizione</summary>
-                        Una fiamma di luminosità equivalente a , una torcia si sprigiona daini oggetto tocca__to dall'incantatore . La fiamma sembra un a .fiamma normale, ma non crea calore e no n
-_consuma ossigeno. La fiamma può essere coperta e nascosta ma non soffocata o spenta . .
-Gli incantesimi di luce contrastano e dissolvono gli incantesimi di oscurità di un livello pari o inferiore .
-<em>Componente materiale :</em> Lincantatore deve
-spargere della polvere di rubino (del valore di 50 mo) sull'oggetto che dovrà trasportare la fiamma.
+                        Una fiamma di luminosità equivalente a , una torcia si sprigiona daini oggetto tocca__to dall'incantatore . La fiamma sembra un a .fiamma normale, ma non crea calore e non consuma ossigeno. La fiamma può essere coperta e nascosta ma non soffocata o spenta. Gli incantesimi di luce contrastano e dissolvono gli incantesimi di oscurità di un livello pari o inferiore.
+                        <em>Componente materiale :</em> Lincantatore deve spargere della polvere di rubino (del valore di 50 mo) sull'oggetto che dovrà trasportare la fiamma.
                     </details>
                 </td>
                 <td>3</td>
@@ -2299,7 +2305,7 @@ L'allarme può essere reso permanent e con un incantesimo permanenza .
 Focus arcano: Una minuscola campana e un sottile filo d'argento.
 Al termine della sua missione, o quand o
 finisce la durata concordata, la creatura ritorna al suo piano di origine (dopo aver fatto rapporto all'incantatore, se appropriato e possibile) .
-Nota: Quando si usa un incantesimo pe r richiamare una creatura dell'acqua, dell'a _ria, del bene, del caos, del fuoco, della legge, .del male o della terra, l'incantesimo diventa .del tipo corrispondente . Ad esempio, alleato planare inferiore diventa un incantesimo .del fuoco se lo si usa per richiamare un ele -
+Nota: Quando si usa un incantesimo per richiamare una creatura dell'acqua, dell'aria, del bene, del caos, del fuoco, della legge, .del male o della terra, l'incantesimo diventa .del tipo corrispondente . Ad esempio, alleato planare inferiore diventa un incantesimo .del fuoco se lo si usa per richiamare un ele -
 mentale del fuoco. Costo in PE: 100 PE.
                     </details>
                 </td>
@@ -2446,6 +2452,25 @@ divino e non è quindi riducibile dalla resistenza agli attacchi basati sul fuoc
                 <td>Riflessi dimezza</td>
                 <td>Sì</td>
             </tr>
+<!-- Speciale -->
+            <tr>
+                <td>Disintegrazione viventi<br>
+                    <details>
+                        <summary>Descrizione</summary>
+                        Un sottile raggio verde scaturisce dal dito indice dell'incantatore. Per colpire il bersaglio, l'incantatore deve compere con successo un attacco di contatto a distanza. <strong>Bonus di Attacco Base + bonus modificatore di Saggezza</strong> Qualsiasi creatura dal raggio subisce 1d6 danni per livello dell'incantatore. Qualsiasi creatura ridotta a 0 o meno punti ferita da questo incantesimo viene completamente disintegrata, lasciandosi dietro solo una scia di polvere fine. L'equipaggiamento della creatura disintegrata non ne subisce l'effetto. Se la creatura o l'oggetto riesce a effettuare un tiro salvezza sulla Tempra con successo, subisce solo 5d6 danni. Se i danni subiti riducono la creatura o l'oggetto a 0 o meno punti ferita, viene completamente disintegrata. Solo la prima creatura o il primo oggetto colpiti ne subiscono gli effetti; cioè, il raggio funziona solo su un singolo bersaglio ad ogni lancio dell'incantesimo.
+                    </details>
+                </td>
+                <td>7</td>
+                <td>Trasmutazione</td>
+                <td>V, S, M/FD</td>
+                <td>1 azione standard</td>
+                <td>Medio (30m +3m per livello)</td>
+                <td>Raggio</td>
+                <td>Istantanea</td>
+                <td>Tempra parziale (oggetto)</td>
+                <td>Sì</td>
+            </tr>
+
 
             
         </tbody>
