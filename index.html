@@ -142,6 +142,17 @@ only screen and (max-device-width : 450px){
         width: 100vw;
     }
 
+    .embedded {
+        width: 100%;
+        padding: 0;
+    }
+
+    .embedded>tbody>tr>td {
+        padding: 0px;
+        border-style: none;
+    }
+   
+
     th {
         font-size: medium;
         font-weight: 400;
@@ -338,32 +349,35 @@ only screen and (max-device-width : 450px){
 
     <table class="js-sort-table">
         <thead>
-
                 <th>Nome</th>
                 <th>Livello</th>
-                <th>Scuola</th>
-                <th>Componenti</th>
-                <th>Tempo di lancio</th>
-                <th>Raggio di azione</th>
-                <th>Effetto</th>
-                <th>Durata</th>
-                <th>Tiro Salvezza</th>
-                <th>Resistenza agli incantesimi</th>
-
         </thead>
         <tbody>
             <tr>
-                <td>Creare Acqua<br><details><summary>Descrizione</summary>Questo incantesimo genera acqua bevibile e sana, equivalente ad acqua piovana pura. L'acqua può essere creata in un'area tanto piccola quanto quella che dovrà contenere il liquido o in un'area grande tre volte tanto (in questo caso creando una pioggia o riempiendo molti ricettacoli più piccoli.<br>Nota: Gli incantesimi di evocazione non possono creare sostanze o oggetti all'interno di una creatura. 1 litro d'acqua pesa 1kg e occupa un volume di 1dm^3.</details></td>
+                <td>Creare Acqua<br>
+                    <details>
+                        <summary>Descrizione</summary>
+                        Questo incantesimo genera acqua bevibile e sana, equivalente ad acqua piovana pura. L'acqua può essere creata in un'area tanto piccola quanto quella che dovrà contenere il liquido o in un'area grande tre volte tanto (in questo caso creando una pioggia o riempiendo molti ricettacoli più piccoli.<br>Nota: Gli incantesimi di evocazione non possono creare sostanze o oggetti all'interno di una creatura. 1 litro d'acqua pesa 1kg e occupa un volume di 1dm^3.
+                    <table class="embedded">
+                            <tr><td>Scuola</td><td>Evocazione (Creazione)</td></tr>
+                            <tr><td>Componenti</td><td>V, S</td></tr>
+                            <tr><td>Tempo di lancio</td><td>1 azione</td></tr>
+                            <tr><td>Raggio di azione</td><td>Vicino (7.5m + 1.5m per ogni due livelli)</td></tr>
+                            <tr><td>Effetto</td><td>Fino a 9l di acqua per livello</td></tr>
+                            <tr><td>Durata</td><td>Istantanea</td></tr>
+                            <tr><td>Tiro Salvezza</td><td>Nessuno</td></tr>
+                            <tr><td>Resistenza agli incantesimi</td><td>No</td></tr>
+                    </table>
+                    </details>
+                </td>
                 <td>0</td>
-                <td>Evocazione (Creazione)</td>
-                <td>V, S</td>
-                <td>1 azione</td>
-                <td>Vicino (7.5m + 1.5m per ogni due livelli)</td>
-                <td>Fino a 9l di acqua per livello</td>
-                <td>Istantanea</td>
-                <td>Nessuno</td>
-                <td>No</td>
+                
             </tr>
+        </tbody>
+    </table>
+    <br>
+    <table>
+        <tbody>
             <tr>
                 <td>Cura Ferite Minori<br><details><summary>Descrizione</summary>Funziona come un Cura Ferite Leggere ma cura solo 1 danno.</details></td>
                 <td>0</td>
