@@ -29,6 +29,12 @@
 section {
     padding: 1em;
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: stretch;
+    align-content: space-around;
+    row-gap: 2em;
+    column-gap: 2em;
 }
 
 p
@@ -98,6 +104,17 @@ a
 	color: #457;
 }
 
+.level {
+
+border-radius: 12px;
+border-width: 2px;
+border-style: solid;
+padding: 1em;
+border-color: #89A;
+align-self: flex-start;
+background-color: #D4DADF;
+}
+
 @media only screen and (max-width : 600px),
 only screen and (max-device-width : 600px){
 	*
@@ -142,6 +159,11 @@ only screen and (max-device-width : 450px){
         width: 100vw;
     }
 
+    ::placeholder {
+        color: black;
+        font-weight: 500;
+    }
+
     th {
         font-size: medium;
         font-weight: 400;
@@ -183,6 +205,8 @@ only screen and (max-device-width : 450px){
         font-weight: 300;
     }
 
+
+
     @media 
 only screen and (max-width: 760px),
 (min-device-width: 768px) and (max-device-width: 1024px)  {
@@ -222,6 +246,14 @@ only screen and (max-width: 760px),
 		padding-right: 10px; 
 		white-space: nowrap;
 	}
+
+    section {
+        padding: 0px;
+    }
+
+    p {
+        font-size: small;
+    }
 }
 </style>
 
@@ -242,12 +274,12 @@ only screen and (max-width: 760px),
             }
             for (var i=0; i<labels.length; i++) {
                 labels[i].value = '';
-            }" style="padding: 1em;">Riposa</button>
+            }" style="padding: 1em; margin: 10px;">Riposa</button>
     </section>
     
     <section>    
 
-        <div>
+        <div class="level">
             <p>6 di livello 0</p>
             <input type="checkbox" class="box" id="00">
             <label for="00">0</label>
@@ -274,7 +306,7 @@ only screen and (max-width: 760px),
             <input type="text" class="label" placeholder="Riparare"><br>
         </div>
         
-        <div>
+        <div class="level">
             <p>5 di livello 1</p>
             <input type="checkbox" class="box" id="06">
             <label for="00">1</label>
@@ -289,14 +321,13 @@ only screen and (max-width: 760px),
             <label>1</label>
             <input type="text" class="label" placeholder="Protezione dal Male"><br>
 
-            <p>Più uno di dominio (Bene, Sole)</p>
+            <p>Dominio (Bene, Sole)</p>
             <input type="checkbox" class="box">
             <label>1</label>
             <input type="text" class="label" placeholder="Contrastare Elementi"><br>
         </div>
-    </section>
-    <section>     
-        <div>
+    
+        <div class="level">
             <p>4 di livello 2</p>
             <input type="checkbox" class="box" id="00">
             <label for="00">2</label>
@@ -311,13 +342,13 @@ only screen and (max-width: 760px),
             <label>2</label>
             <input type="text" class="label" placeholder="Rintocco di Morte"><br>
 
-            <p>Più uno di dominio (Bene, Sole)</p>
+            <p>Dominio (Bene, Sole)</p>
             <input type="checkbox" class="box">
             <label>2</label>
             <input type="text" class="label" placeholder="Aiuto"><br>
         </div>
         
-        <div>
+        <div class="level">
             <p>4 di livello 3</p>
             <input type="checkbox" class="box" id="00">
             <label for="00">3</label>
@@ -330,15 +361,14 @@ only screen and (max-width: 760px),
             <input type="text" class="label" placeholder="Evoca Mostri III"><br>
 
 
-            <p>Più uno di dominio (Bene, Sole)</p>
+            <p>Dominio (Bene, Sole)</p>
             <input type="checkbox" class="box">
             <label>1</label>
             <input type="text" class="label" placeholder="Luce Incandescente">
             <br>
         </div>
-    </section>
-    <section>     
-        <div>
+  
+        <div class="level">
             <p>3 di livello 4</p>
             <input type="checkbox" class="box">
             <label for="00">4</label>
@@ -350,13 +380,13 @@ only screen and (max-width: 760px),
             <label for="00">4</label>
             <input type="text" class="label" placeholder="Congedo"><br>
 
-            <p>Più uno di dominio (Bene, Sole)</p>
+            <p>Dominio (Bene, Sole)</p>
             <input type="checkbox" class="box">
             <label>4</label>
             <input type="text" class="label" placeholder="Punizione Sacra"><br>
         </div>
         
-        <div>
+        <div class="level">
             <p>2 di livello 5</p>
             <input type="checkbox" class="box">
             <label for="00">5</label>
@@ -365,27 +395,26 @@ only screen and (max-width: 760px),
             <label for="00">5</label>
             <input type="text" class="label" placeholder="Giusto Potere"><br>
 
-            <p>Più uno di dominio (Bene, Sole)</p>
+            <p>Dominio (Bene, Sole)</p>
             <input type="checkbox" class="box">
             <label>5</label>
             <input type="text" class="label" placeholder="Colpo Infuocato"><br>
         </div>
-    </section>
-    <section>
-        <div>
+
+        <div class="level">
             <p>1 di livello 6</p>
             <input type="checkbox" class="box">
             <label for="00">6</label>
             <input type="text" class="label" placeholder="Evoca Mostri VI"><br>
            
-            <p>Più uno di dominio (Bene, Sole)</p>
+            <p>Dominio (Bene, Sole)</p>
             <input type="checkbox" class="box">
             <label>6</label>
             <input type="text" class="label" placeholder="Semi di fuoco"><br>
         </div>
 
-        <div>
-            <h3>Speciale, una volta al giorno</h3>
+        <div class="level">
+            <p><strong>Speciale</strong>, una volta al giorno</p>
             <input type="checkbox" class="box" id="special">
             <label for="special">Disintegrazione dei viventi</label>
         </div>
