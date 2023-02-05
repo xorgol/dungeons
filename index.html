@@ -111,13 +111,13 @@ a
 
 .level {
 
-border-radius: 12px;
-border-width: 2px;
+border-radius: 5px;
+border-width: 1px;
 border-style: solid;
 padding: 1em;
 border-color: #89A;
 align-self: flex-start;
-background-color: #D4DADF;
+background-color: #EEEEEE;
 }
 
 @media only screen and (max-width : 600px),
@@ -266,6 +266,7 @@ only screen and (max-width: 760px),
 <h1 id="title">Incantesimi da Chierico (lvl 11)</h1>
 	<br>
     <section>
+        <img src="paranol_inizale.png" style="width: 100px; height: 150px; flex: 0.1;">
         <button onclick="
             localStorage.clear();
             var boxes = document.querySelectorAll('input.box');
@@ -275,7 +276,7 @@ only screen and (max-width: 760px),
             }
             for (var i=0; i<labels.length; i++) {
                 labels[i].value = '';
-            }" style="padding: 1em; margin: 10px;">Riposa</button>
+            }" style="padding: 1em; margin: 10px; flex: 1;">Riposa</button>
     </section>
     
     <section>    
