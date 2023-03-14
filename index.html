@@ -3876,99 +3876,6 @@ Componente materiale: Polvere di calce e . carbone .</details>
         </tbody>
     </table>
       
-    
-    <!-- <section>
-        <p>5° Livello</p>
-        <p>Arma distruttiva: Un'arma da mischia distrugge i non morti.<br>
-            Colpo infuocato: Colpisce i nemici con un fuoco divino (1d6 danni per livello).
-<br>
-Comando superiore: Come comando, ma influenza un soggetto per livello.
-<br>
-Comunione: Una divinità risponde con un sì o un no a una domanda per livello.
-<br>
-Cura ferite leggere di massa: Cura 1d8 danni +1 danno per livello
-(max +25) a molte creature.
-<br>
-Dissolvi il bene/caos/legge/male :Bonus di +4 contro gli attac-
-chi .
-<br>
-Distruggere viventi : Un attacco di contatto uccide il soggetto. Espiazione": Rimuove il fardello dei misfatti dal soggetto.
-<br>
-Evoca mostri V : Richiama una creatura extraplanare che combatt e
-per l'incantatore.
-<br>
-Giusto potere: La taglia dell'incantatore aumenta, e ottiene bonus di
-combattimento .
-<br>
-Infliggi ferite leggere di massa : Infligge 1d8 danni +1 danno per
-livello a molte creature .
-<br>
-Muro di pietra: Crea un muro di pietra che può essere plasmato .
-<br>
-Piaga degli insetti: Sciami di locuste attaccano le creature . Profanare" : Rende una locazione sacrilega .
-<br>
-Resistenza agli incantesimi : Il soggetto ottiene una RI di +12 +1 per livello.
-<br>
-Rianimare morti": Riporta in vita un soggetto che è morta da 1 giorno per livello.
-<br>
-Santificare" : Consacra una locazione .
-<br>
-Scrutare' : Spia soggetti a distanza .
-<br>
-Sigillo di giustizia : Determina un'azione che attiverà una maledi-
-none sul soggetto.
-<br>
-Simbolo di dolore" : Runa che devasta le creature vicine con dolori
-indicibili .
-<br>
-Simbolo di sonno" : Runa che fa cadere le creature vicine in u n
-sonno catatonico .
-<br>
-Spezzare incantamento : Libera i soggetti da ammaliamenti, altera-
-zioni, maledizioni e pietrificazioni
-<br>
-Spostamento planare' : Fino a otto soggetti viaggiano su un altro
-piano.
-<br>
-Visione del vero" : Permette di vedere tutte le cose per quello che
-sono veramente .
-        </p>
-    </section>
-    <section>
-        <p>6° Livello</p>
-        <p>
-            Alleato planare': Come alleato planare inferiore, ma fino a 12 DV. <br>
-            Animare oggetti : Gli oggetti attaccano i nemici dell'incantatore. <br>
-            Banchetto degli eroi:Cibo per una creatura per livello, cura e fornisce bonus di combattimento.<br>
-            Barriera di lame : Una cortina di lame infligge 1d6 danni perlivello .<br>
-            Camminare nel vento: L'incantatore e i suoi alleati diventano inconsistenti e possono viaggiare velocemente.<br>
-            Costrizione/Cerca: Come costrizione inferiore, ma influenza qualsiasi creatura .
-            Creare non morti : Per creare ghoul, ghast, mummie o mohrg. <br>
-            Cura ferite moderate di massa: Cura 2d8 danni +1 danno per livello (max +30) a molte creature .<br>
-            Dissolvi magie superiore: Come dissolvi magie, ma fino a +20 alla prova.<br>
-            Esilio: Bandisce 2 DV per livello di creature extraplanari.<br>
-            Evoca mostri VI : Richiama una creatura extraplanare che combatte per l'incantatore.<br>
-            Ferire: Infligge 10 danni per livello al bersaglio.<br>
-            Forza del toro di massa: Come forza del toro, ma influenza un soggetto per livello.<br>
-            Glifo di interdizione superiore" : Come glifo di interdizione, ma fin o a t 0d8 danni o un incantesimo di 6° livello .<br>
-            Guarigione : Cura io danni per livello, tutte le malattie e le condi- zioni mentali .<br>
-            Guscio anti-vita: Un campo di 3 m respinge le creature viventi. <br>
-            Infliggi ferite moderate di massa : Infligge 2d8 danni +1 danno per livello a molte creature.<br>
-            Non morto a morto: Distrugge 1d4 DV per livello di non morti (max 20d4).<br>
-            Parola del ritiro: Teletrasporta indietro l'incantatore ad un posto designato.<br>
-            Proibizione: Blocca i viaggi planari, infligge danni alle creature di un altro allineamento.<br>
-            Resistenza dell'orso di massa : Come resistenza dell'orso, m influenza un soggetto per livello.<br>
-            Saggezza del gufo di massa :Come saggezza del gufo, ma influenza un, soggetto per livello.<br>
-            Scopri il percorso: Indica la via più diretta verso una locazione. <br>
-            Simbolo di paura: Runa che fa cadere le creature vicine in preda al panico.<br>
-            Simbolo di persuasione: Runa che rende le creature vicine soggette a charme .<br>
-            Splendore dell'aquila di massa: Come splendore dell'aquila, ma
-            influenza un soggetto per livello.
-
-        </p>
-    </section> -->
-
-        
         <section>
             <h2 id="mostri">Evoca Mostri</h2>
         </section>
@@ -4075,6 +3982,142 @@ sono veramente .
                 <li><strong>PE</strong>, Punti Esperienza</li>
             </ul>
         </section>
+        <section style="flex-direction: column;">
+            
+            <h2>Iactator aleorum</h2>
+            <section>
+                <input id="enne" type="text" class="label" placeholder="1">
+                <div>d</div>
+                <input id="ics" type="text" class="label" placeholder="6">
+            </section>
+            <button onclick="document.getElementById('result').innerHTML = ndx(document.getElementById('enne').value, document.getElementById('ics').value)">Iacte!</button>
+            <p>Resultatum:</p>
+            <p id="result">0</p>
+        </section>
+        <section style="flex-direction: column;">
+            
+            <h2>Armi</h2>
+            <section>
+                <button onclick="document.getElementById('tiro').innerHTML = ndx(1, 20) + 8 + 2; critical('mazza', 8+2);">Mazza</button>
+                <button onclick="document.getElementById('tiro').innerHTML = ndx(1, 20) + 5 + 2; critical('mazza', 5+2);">Seconda Mazza</button>
+                <button onclick="document.getElementById('tiro').innerHTML = ndx(1, 20) + 8 + 2; critical('balestra', 8+2);">Balestra</button>
+                <button onclick="document.getElementById('tiro').innerHTML = ndx(1, 20) + 5 + 2; critical('balestra', 5+2);">Seconda Balestra</button>
+                <p>Tiro per colpire:</p>
+                <p id="tiro">0</p>
+            </section>
+            <h3>Danni</h3>
+            <section>
+                
+                <button onclick="document.getElementById('danni').innerHTML = (ndx(1, 8) + 3)*critMultiplier;">Danni Mazza</button>
+                <button onclick="document.getElementById('danni').innerHTML = ndx(1, 8)*critMultiplier">Danni Balestra</button>
+                <p id="danni">0</p>
+            </section>
+            
+            
+        </section>
+        <section>
+            <h2>Abilità</h2>
+            <table>
+                <thead>
+                    <th>Nome abilità</th>
+                    <th>Caratteristica chiave</th>
+                    <th>Modificatore abilità</th>
+                    <th>Modificatore caratteristica</th>
+                    <th>Gradi</th>
+                    <th>Modificatori vari</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Artigianato (Alchimia)</td>
+                        <td>INT</td>
+                        <td>6</td>
+                        <td>2</td>
+                        <td>4</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>Ascoltare</td>
+                        <td>SAG</td>
+                        <td>8</td>
+                        <td>2</td>
+                        <td>4</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td>Cercare</td>
+                        <td>DES</td>
+                        <td>4</td>
+                        <td>0</td>
+                        <td>4</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>Concentrazione</td>
+                        <td>COS</td>
+                        <td>11</td>
+                        <td>2</td>
+                        <td>9</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>Conoscenze (Arcane)</td>
+                        <td>INT</td>
+                        <td>11</td>
+                        <td>2</td>
+                        <td>9</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>Conoscenze (Storica)</td>
+                        <td>INT</td>
+                        <td>11</td>
+                        <td>2</td>
+                        <td>9</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>Conoscenze (Religione)</td>
+                        <td>INT</td>
+                        <td>11</td>
+                        <td>2</td>
+                        <td>9</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>Conoscenze (Piani)</td>
+                        <td>INT</td>
+                        <td>11</td>
+                        <td>2</td>
+                        <td>9</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>Guarire</td>
+                        <td>SAG</td>
+                        <td>11</td>
+                        <td>2</td>
+                        <td>9</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>Nuotare</td>
+                        <td>FOR</td>
+                        <td>-2</td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td>-6</td>
+                    </tr>
+                    <tr>
+                        <td>Sapienza Magica</td>
+                        <td>INT</td>
+                        <td>4</td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td>0</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
 </article>
 </body>
 <script>
@@ -4116,5 +4159,38 @@ sono veramente .
             }
         }
     });
+</script>
+<script>
+    document.getElementById('enne').value = document.getElementById('enne').placeholder;
+    document.getElementById('ics').value = document.getElementById('ics').placeholder;
+    let critMultiplier = 1;
+
+    function ndx(n, x) {
+        result = 0;
+        for(i=0; i<n; i++) {
+            result += parseInt(Math.random()*x+1, 10);
+        }
+        console.log("Roll result: " + result);
+        //document.getElementById("result").innerHTML = result;
+        return result;
+    }
+
+    function critical(weapon, bonus) {
+        critMultiplier = 1;
+        if (weapon == 'mazza') {
+            if (parseInt(document.getElementById('tiro').innerHTML, 10) - bonus == 20)
+            {
+                alert("CRITICAL HIT");
+                critMultiplier = 2;
+            }
+        }
+        if (weapon == 'balestra') {
+            if (parseInt(document.getElementById('tiro').innerHTML, 10) - bonus >= 19)
+            {
+                alert("CRITICAL HIT");
+                critMultiplier = 2;
+            }
+        }
+    }
 </script>
 </html>
