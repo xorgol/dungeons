@@ -261,11 +261,11 @@
 
   <body style="width: 100vw">
     <article>
-      <h1 id="title">Incantesimi da Chierico (lvl 14)</h1>
+      <h1 id="title">Incantesimi da Chierico (lvl 15)</h1>
       <br />
       <section>
         <img
-          src="paranol_inizale.png"
+          src="striné.png"
           style="width: 100px; height: 150px; flex: 0.1"
         />
         <button
@@ -333,6 +333,13 @@
             class="label"
             placeholder="Comprensione dei linguaggi"
           /><br />
+          <input type="checkbox" class="box" id="07" />
+          <label for="07">1</label>
+          <input
+            type="text"
+            class="label"
+            placeholder="Devastazione"
+          /><br />
           <input type="checkbox" class="box" />
           <label>1</label>
           <input type="text" class="label" placeholder="Pietra Magica" /><br />
@@ -363,6 +370,13 @@
             class="label"
             placeholder="Arma Spirituale"
           /><br />
+          <input type="checkbox" class="box" id="07" />
+          <label for="07">2</label>
+          <input
+            type="text"
+            class="label"
+            placeholder="Zona di verità"
+          /><br />
           <input type="checkbox" class="box" id="01" />
           <label for="00">2</label>
           <input type="text" class="label" placeholder="Blocca Persone" /><br />
@@ -371,14 +385,14 @@
           <input
             type="text"
             class="label"
-            placeholder="Restorare Inferiore"
+            placeholder="Ristorare Inferiore"
           /><br />
           <input type="checkbox" class="box" />
           <label>2</label>
           <input
             type="text"
             class="label"
-            placeholder="Rintocco di Morte"
+            placeholder="Scudo su altri"
           /><br />
 
           <p>Dominio</p>
@@ -388,7 +402,10 @@
         </div>
 
         <div class="level">
-          <p>4 di livello 3</p>
+          <p>5 di livello 3</p>
+          <input type="checkbox" class="box" id="00" />
+          <label for="00">3</label>
+          <input type="text" class="label" placeholder="Respirare sott'acqua" /><br />
           <input type="checkbox" class="box" id="00" />
           <label for="00">3</label>
           <input type="text" class="label" placeholder="Preghiera" /><br />
@@ -425,6 +442,9 @@
           <p>4 di livello 4</p>
           <input type="checkbox" class="box" />
           <label for="00">4</label>
+          <input type="text" class="label" placeholder="Immunità agli incantesimi" /><br />
+          <input type="checkbox" class="box" />
+          <label for="00">4</label>
           <input type="text" class="label" placeholder="Potere Divino" /><br />
           <input type="checkbox" class="box" />
           <label for="00">4</label>
@@ -448,13 +468,16 @@
         </div>
 
         <div class="level">
-          <p>3 di livello 5</p>
+          <p>4 di livello 5</p>
           <input type="checkbox" class="box" />
           <label for="00">5</label>
           <input type="text" class="label" placeholder="Evoca Mostri V" /><br />
           <input type="checkbox" class="box" />
           <label for="00">5</label>
-          <input type="text" class="label" placeholder="Giusto Potere" /><br />
+          <input type="text" class="label" placeholder="Spezzare Incantamento" /><br />
+          <input type="checkbox" class="box" />
+          <label for="00">5</label>
+          <input type="text" class="label" placeholder="Potere Divino" /><br />
           <input type="checkbox" class="box" />
           <label for="00">5</label>
           <input type="text" class="label" placeholder="Giusto Potere" /><br />
@@ -476,14 +499,14 @@
           <input
             type="text"
             class="label"
-            placeholder="Evoca Mostri VI"
+            placeholder="Barriera di Lame"
           /><br />
           <input type="checkbox" class="box" />
           <label for="00">6</label>
           <input
             type="text"
             class="label"
-            placeholder="Evoca Mostri VI"
+            placeholder="Orso di Massa"
           /><br />
           <input type="checkbox" class="box" />
           <label for="00">6</label>
@@ -503,17 +526,32 @@
           <p>2 di livello 7</p>
           <input type="checkbox" class="box" />
           <label for="00">6</label>
-          <input type="text" class="label" placeholder="Resurrezione" />
+          <input type="text" class="label" placeholder="Repulsione" /><br>
           <input type="checkbox" class="box" />
           <label for="00">6</label>
           <input type="text" class="label" placeholder="Resurrezione" /><br />
           <p>Dominio</p>
           <input type="checkbox" class="box" />
-          <label>6</label>
+          <label>7</label>
           <input
             type="text"
             class="label"
             placeholder="Parola sacra: Uccide, paralizza, rallenta o assorda i soggetti non , buoni ."
+          /><br />
+        </div>
+
+        <div class="level">
+          <p>1 di livello 8</p>
+          <input type="checkbox" class="box" />
+          <label for="00">8</label>
+          <input type="text" class="label" placeholder="Immunità agli incantesimi superiore" /><br />
+          <p>Dominio</p>
+          <input type="checkbox" class="box" />
+          <label>8</label>
+          <input
+            type="text"
+            class="label"
+            placeholder="Esplosione solare: acceca per 24m, 6d6 danni"
           /><br />
         </div>
 
@@ -5555,17 +5593,42 @@
           </tr>
           <tr>
             <td>
-              Cura ferite moderate di massa<br />
+              Cura ferite gravi di massa<br />
               <details>
                 <summary>
-                  Cura 2d8 danni +1 danno per livello (max +30) a molte
+                  Cura 3d8 danni +1 danno per livello (max +35) a molte
                   creature.
                 </summary>
-                Funziona come cura ferite leggere di massa, ma cura 2d8 danni +1
-                danno per livello dell'incantatore (massimo +30).
+                Funziona come cura ferite leggere di massa, ma cura 3d8 danni +1
+                danno per livello dell'incantatore (massimo +35).
               </details>
             </td>
-            <td>6</td>
+            <td>7</td>
+            <td>Evocazione (Guarigione)</td>
+            <td>V, S</td>
+            <td>1 azione standard</td>
+            <td>Vicino (7,5 m + 1,5 m per ogni 2 livelli)</td>
+            <td>
+              Una creatura per livello, che non possono trovarsi a più di 9m
+              l'una dall'altra
+            </td>
+            <td>Istantanea</td>
+            <td>Volontà dimezza (innocuo), o Volotà dimezza, vedi testo</td>
+            <td>Sì (innocuo), Sì, vedi testo.</td>
+          </tr>
+          <tr>
+            <td>
+              Cura ferite critiche di massa<br />
+              <details>
+                <summary>
+                  Cura 4d8 danni +1 danno per livello (max +40) a molte
+                  creature.
+                </summary>
+                Funziona come cura ferite leggere di massa, ma cura 4d8 danni +1
+                danno per livello dell'incantatore (massimo +40).
+              </details>
+            </td>
+            <td>8</td>
             <td>Evocazione (Guarigione)</td>
             <td>V, S</td>
             <td>1 azione standard</td>
@@ -5983,8 +6046,8 @@
                   Come saggezza del gufo, ma influenza un soggetto per livello.
                 </summary>
                 La creatura trasmutata diventa più saggia. L'incantesimo
-                conferisce al soggetto un bonus di potenziamento +4 alla
-                Saggezza, aggiungendo i normali benefici alle abilità basate
+                conferisce al soggetto un bonus di potenziamento <strong>+4 alla
+                Saggezza</strong>, aggiungendo i normali benefici alle abilità basate
                 sulla Saggezza. Chierici, druidi, paladini e ranger (e altri
                 incantatori che si affidano alla Saggezza) che ricevono saggezza
                 del gufo non guadagnano ulteriori incantesimi bonus per
@@ -6124,7 +6187,7 @@
                 </summary>
                 La creatura trasmutata diventa più equilibrata, articolata e
                 personalmente energica. L'incantesimo conferisce al soggetto un
-                bonus di potenziamento +4 al Carisma, aggiungendo gli abituali
+                bonus di potenziamento <strong>+4 al Carisma</strong>, aggiungendo gli abituali
                 benefici alle prove di abilità basate sul Carisma e ad altri
                 utilizzi del modificatore di Carisma. Gli stregoni e i bardi (e
                 gli altri incantatori che fanno affidamento sul Carisma)
@@ -6157,30 +6220,29 @@
                 Funziona come rianimare morti, ma l'incantatore è in grado di
                 riportare in vita e completamente in forze qualsiasi creatura
                 morta. Lo stato dei suoi resti non è un fattore determinante.
-                Finché esiste ancora una piccola porzione del corpo, la
-                creatura può essere riportata in vita, ma la porzione del
-                corpo che riceve l'incantesimo deve essere stata parte del
-                corpo della creatura al momento della morte. (I resti di una
-                creatura colpita da disintegrazione contano come una porzione
-                del corpo). La creatura deve essere morta da non più di 10 anni
-                per livello dell'incantatore. Una volta che questo incantesimo
-                è stato completato, la creatura viene immediatamente
-                riportata al massimo dei punti ferita, della salute e della
-                forza fisica, senza alcuna perdita di eventuali incantesimi
-                preparati. Il soggetto perde comunque un livello o 2 punti di
-                Costituzione se era di 1° livello (se questa riduzione dovesse
-                portare la sua Cos a 0 o meno, non può essere resuscitato).
-                Questa perdita di livello o di Costituzione non può essere in
-                alcun modo ripristinata. È possibile resuscitare qualcuno
-                ucciso da un effetto di morte o che sia stato trasformato in
-                una creatura non morta e poi distrutto. Non si può
-                resuscitare qualcuno ucciso da un effetto di morte o che sia
-                stato trasformato in una creatura non morta e poi distrutto.
-                Non si può resuscitare qualcuno che sia morto di vecchiaia. I
-                costrutti, gli elemntali, gli esterni e le creature non morte
-                non possono essere resuscitate. <br>Componente materiale: uno
-                spruzzo di acquasanta e diamanti del valore totale di almeno
-                10000 monete d'oro.
+                Finché esiste ancora una piccola porzione del corpo, la creatura
+                può essere riportata in vita, ma la porzione del corpo che
+                riceve l'incantesimo deve essere stata parte del corpo della
+                creatura al momento della morte. (I resti di una creatura
+                colpita da disintegrazione contano come una porzione del corpo).
+                La creatura deve essere morta da non più di 10 anni per livello
+                dell'incantatore. Una volta che questo incantesimo è stato
+                completato, la creatura viene immediatamente riportata al
+                massimo dei punti ferita, della salute e della forza fisica,
+                senza alcuna perdita di eventuali incantesimi preparati. Il
+                soggetto perde comunque un livello o 2 punti di Costituzione se
+                era di 1° livello (se questa riduzione dovesse portare la sua
+                Cos a 0 o meno, non può essere resuscitato). Questa perdita di
+                livello o di Costituzione non può essere in alcun modo
+                ripristinata. È possibile resuscitare qualcuno ucciso da un
+                effetto di morte o che sia stato trasformato in una creatura non
+                morta e poi distrutto. Non si può resuscitare qualcuno ucciso da
+                un effetto di morte o che sia stato trasformato in una creatura
+                non morta e poi distrutto. Non si può resuscitare qualcuno che
+                sia morto di vecchiaia. I costrutti, gli elemntali, gli esterni
+                e le creature non morte non possono essere resuscitate.
+                <br />Componente materiale: uno spruzzo di acquasanta e diamanti
+                del valore totale di almeno 10000 monete d'oro.
               </details>
             </td>
             <td>7</td>
@@ -6198,9 +6260,7 @@
             <td>
               Parola Sacra<br />
               <details>
-                <summary>
-                  Pagina 269
-                </summary>
+                <summary>Pagina 269</summary>
                 Funziona come rianimare morti, ma l'incan- tatore è in grado di
                 riportare in vita e com- pletamente in forze qualsiasi creatura
                 morta . Lo stato dei suoi resti non è un fattore deter- minante
@@ -6241,55 +6301,9 @@
             <td>Sì (innocuo)</td>
           </tr>
 
-          <tr>
-            <td>
-              Cura ferite gravi di massa<br />
-              <details>
-                <summary>
-                  Cura 3d8 +1 per livello (max +35) per molte creature
-                </summary>
-                Funziona come rianimare morti, ma l'incan- tatore è in grado di
-                riportare in vita e com- pletamente in forze qualsiasi creatura
-                morta . Lo stato dei suoi resti non è un fattore deter- minante
-                . Finché esiste ancora una piccol a porzione del corpo, la
-                creatura può essere ri- portata in vita, ma la porzione del
-                corpo che riceve l'incantesimo deve essere stata part e del
-                corpo della creatura al momento dell a morte. (I resti di una
-                creatura colpita da dis- integrazione contano come una porzione
-                de l corpo). La creatura deve essere morta da non più di 10 anni
-                per livello dell'incantatore . Una volta che questo incantesimo
-                è stat o completato, la creatura viene immediata - mente
-                riportata al massimo dei punti ferita, della salute e della
-                forza fisica, senza alcuna perdita di eventuali incantesimi
-                preparati. Il soggetto perde comunque un livello o 2 punti di
-                Costituzione se era di i° livello (se questa riduzione dovesse
-                portare la sua Co s a 0 o meno, non può essere resuscitato) .
-                Questa perdita di livello o di Costituzion e non può essere in
-                alcun modo ripristinata . È possibile resuscitare qualcuno
-                ucciso da un effetto di morte o che sia stato tra- sformato in
-                una creatura non morta e poi di - strutto. Non si può
-                resuscitare qualcuno ucciso da un effetto di morte o che sia
-                astato trasformato in una creatura non morta e poi distrutto.
-                Non si può resuscitare qualcuno che sia morto di vecchiaia. I
-                costrutti, gli eleemntali, gli esterni e le creature non morte
-                non possono essere resuscitate. Componente materiale: uno
-                spruzzo di acquasanta e diamanti del valore totale di almeno
-                10000 monete d'oro.
-              </details>
-            </td>
-            <td>7</td>
-            <td>Evocazione</td>
-            <td>V, S, M/FD</td>
-            <td>1 minuto</td>
-            <td>Vicino (7,5 m + 1,5 per ogni 2 livelli )</td>
-            <td>
-              Una creatura per livello, che non possono trovarsi a più di 9 m
-              l'una dall'altra
-            </td>
-            <td>Istantanea</td>
-            <td>Nessuno</td>
-            <td>Sì (innocuo)</td>
-          </tr>
+          
+
+          
 
           <!-- Speciale -->
           <tr>
@@ -6615,6 +6629,21 @@
           </tbody>
         </table>
       </section>
+      <div style="max-width: 80vw;">
+        <h2>Tonitrus</h2>
+        <p>Requisito: nessuno</p>
+        <p>Tipologia: arma contundente a una mano</p>
+        <p>
+          Modificatore per attacco in mischia: B.A.B. + modificatore forza + 2
+        </p>
+        <p>Danni: 1d8+modificatore di forza, critico 20</p>
+        <p>
+          Capacità speciali: Carica Elettrica: come azione di round completo si
+          può agitare il Tonitrus per conferirgli uan carica elettrica; per i
+          successibi tre round di gioco ogni attacco in mischia andato a segno
+          infligge 1d6 addizionale.
+        </p>
+      </div>
     </article>
   </body>
   <script>
